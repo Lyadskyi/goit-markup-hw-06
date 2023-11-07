@@ -1,4 +1,4 @@
-/* Rules-tag */
+/* ==================== Rules-tag ==================== */
 ul,
 ol {
   list-style: none;
@@ -161,9 +161,9 @@ p {
 }
 /* ==================== Section HERO ==================== */
 .section-hero {
-  max-width: 1440px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  max-width: 320px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   margin-right: auto;
   margin-left: auto;
   background: #2e2f42;
@@ -178,16 +178,86 @@ p {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (min-width: 768px) {
+  .section-hero {
+    max-width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    margin-right: auto;
+    margin-left: auto;
+    background: hsl(237, 18%, 22%);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .section-hero {
+    max-width: 1158px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
 .section-hero-title {
-  max-width: 496px;
+  max-width: 169px;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 72px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero-title {
+    max-width: 496px;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 36px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-hero-title {
+    max-width: 496px;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+    color: #ffffff;
+  }
 }
 
 .btn {
@@ -201,7 +271,6 @@ p {
   height: 56px;
   border: none;
   border-radius: 4px;
-  margin-top: 48px;
   margin-right: auto;
   margin-left: auto;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
