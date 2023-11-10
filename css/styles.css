@@ -160,6 +160,7 @@ p {
   align-items: center;
 }
 /* ==================== Section HERO ==================== */
+/* ========== Mobile screen ========== */
 .section-hero {
   max-width: 320px;
   padding-top: 72px;
@@ -171,52 +172,70 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url("../images/dark-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (min-resolution: 192dpi) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/dark-bg@2x-mobile.jpg");
+  }
+}
+/* ========== Tablet screen ========== */
 @media screen and (min-width: 768px) {
   .section-hero {
     max-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
-    margin-right: auto;
-    margin-left: auto;
-    background: hsl(237, 18%, 22%);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      url("../images/dark-bg-tablet.jpg");
   }
 }
+
+@media screen and (min-resolution: 192dpi) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/dark-bg@2x-tablet.jpg");
+  }
+}
+/* ========== Desktop screen ========== */
 @media screen and (min-width: 1158px) {
   .section-hero {
     max-width: 1158px;
     padding-top: 188px;
     padding-bottom: 188px;
-    margin-right: auto;
-    margin-left: auto;
-    background: #2e2f42;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      url("../images/people-office-desktop.jpg");
   }
 }
 
+/* @media screen and (min-resolution: 192dpi) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office@2x-desktop.jpg");
+  }
+} */
+
+/* ========== Mobile screen ========== */
 .section-hero-title {
   max-width: 169px;
   text-align: center;
@@ -229,34 +248,19 @@ p {
   margin-bottom: 72px;
   color: #ffffff;
 }
-
+/* ========== Tablet screen ========== */
 @media screen and (min-width: 768px) {
   .section-hero-title {
     max-width: 496px;
-    text-align: center;
     font-size: 56px;
-    font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 0.02em;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 36px;
-    color: #ffffff;
   }
 }
-
+/* ========== Desktop screen ========== */
 @media screen and (min-width: 1158px) {
   .section-hero-title {
-    max-width: 496px;
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 48px;
-    color: #ffffff;
   }
 }
 
