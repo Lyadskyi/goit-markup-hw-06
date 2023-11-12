@@ -21,47 +21,54 @@
   </head>
   <body>
     <!-- ==================== NAVIGATION ==================== -->
-    <!-- <header class="page-header">
-			<div class="subtitle container">
-				<nav class="page-navigation">
-					<a class="logotype" href="./index.html">Web<span>Studio</span></a>
-					<ul class="page-navigation-link">
-						<li class="navigation-link-item">
-							<a class="link navigation-link current" href="./index.html"
-								>Studio</a
-							>
-						</li>
-						<li class="navigation-link-item">
-							<a class="link navigation-link" href="">Portfolio</a>
-						</li>
-						<li class="navigation-link-item">
-							<a class="link navigation-link" href="">Contacts</a>
-						</li>
-					</ul>
-				</nav>
-				<address class="address-list-link">
-					<ul class="address-navigation-link">
-						<li>
-							<a href="mailto:info@devstudio.com" class="link address-list-link"
-								>info@devstudio.com</a
-							>
-						</li>
-						<li>
-							<a href="tel:+110001111111" class="link address-list-link"
-								>+11 (000) 111-11-11</a
-						 >
-						</li>
-					</ul>
-				</address>
-			</div>
-		</header> -->
+    <header class="page-header">
+      <div class="subtitle container">
+        <nav class="page-navigation">
+          <a class="logotype" href="./index.html">Web<span>Studio</span></a>
+          <ul class="page-navigation-link">
+            <li class="navigation-link-item">
+              <a class="link navigation-link current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="navigation-link-item">
+              <a class="link navigation-link" href="">Portfolio</a>
+            </li>
+            <li class="navigation-link-item">
+              <a class="link navigation-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ==================== MENU BURGER ==================== -->
+        <button class="mobile-open-btn" type="button">
+          <svg class="mobile-open-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <!-- ==================== / MENU BURGER ==================== -->
+        <address class="address-list-link">
+          <ul class="address-navigation-link">
+            <li>
+              <a href="mailto:info@devstudio.com" class="link address-list-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="link address-list-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
     <!-- MAIN CONTENT -->
     <main>
       <!-- ==================== Section HERO ==================== -->
       <section class="section-hero">
         <div class="container">
           <h1 class="section-hero-title">
-            Effective Solutions for Your Business
+            Effective Solutions For Your Business
           </h1>
           <button class="btn" type="button">Order Service</button>
         </div>
@@ -447,9 +454,9 @@
                     ./images/row-two-card-three-mobile.jpg     288w,
                     ./images/row-two-card-three-tablet.jpg     356w,
                     ./images/row-two-card-three-desktop.jpg    360w,
-                    ./images/row-two-card-three@2x-mobile.jpg  576w,
-                    ./images/row-two-card-three@2x-tablet.jpg  712w,
-                    ./images/row-two-card-three@2x-desktop.jpg 720w
+                    ./images/retina/@2x-mobile.jpg  576w,
+                    ./images/retina/@2x-tablet.jpg  712w,
+                    ./images/retina/@2x-desktop.jpg 720w
                   "
                   sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/row-two-card-three-mobile.jpg"
@@ -532,7 +539,7 @@
         </div>
       </div>
     </footer>
-    <!-- ==================== MODAL WINDOW ==================== -->
+    <!-- ==================== MODAL WINDOW BACKDROP ==================== -->
     <!-- <div class="backdrop is-open">
 			<div class="modal">
 				<button
@@ -541,7 +548,7 @@
 					aria-label="modal close button"
 				>
 					<svg class="modal-close-btn-icon" width="8" height="8">
-						<use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+						<use href="./images/icons.svg#icon-close"></use>
 					</svg>
 				</button>
 				<p class="review-form-description">
@@ -645,5 +652,22 @@
 				</form>
 			</div>
 		</div> -->
+    <!-- ==================== MOBILE MENU BURGER ==================== -->
+    <div class="mobile-menu is-open">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg class="mobile-menu-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <!-- <nav>
+          <ul>
+            <li><a href="">Studio</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </nav> -->
+      </div>
+    </div>
   </body>
 </html>
