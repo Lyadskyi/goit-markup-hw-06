@@ -35,7 +35,6 @@ p {
 /* ========== MOBILE SCREEN ========== */
 /* === NAVIGATION === */
 .container {
-  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -147,7 +146,6 @@ p {
 /* === /NAVIGATION/ === */
 /* === SECTION HERO === */
 .section-hero {
-  width: 320px;
   padding-top: 72px;
   padding-bottom: 72px;
   margin-right: auto;
@@ -180,7 +178,6 @@ p {
   max-width: 169px;
   text-align: center;
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   margin-right: auto;
@@ -281,7 +278,7 @@ p {
 
 .section-two-list-menu {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   gap: 72px;
 }
@@ -373,9 +370,9 @@ p {
 
 .section-three-list-menu {
   display: flex;
-  width: 288px;
+  /* width: 288px; */
   padding-bottom: 0px;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: flex-start;
   gap: 48px;
 }
@@ -963,11 +960,9 @@ p {
     margin-right: auto;
   }
 }
-
 /* === /MOBILE MENU BURGER/ === */
 /* ========== /MOBILE SCREEN/ ========== */
-/* ========== /TABLET SCREEN/ ========== */
-
+/* ========== TABLET SCREEN ========== */
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -975,7 +970,7 @@ p {
     margin-right: auto;
   }
 }
-
+/* === HEADER === */
 .mobile-open-btn {
   display: none;
 }
@@ -985,7 +980,7 @@ p {
 }
 
 .logotype {
-  margin-right: 20px;
+  margin-right: 120px;
 }
 
 .page-header {
@@ -1027,9 +1022,8 @@ p {
 .link.address-list-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* === /HEADER/ === */
 /* === SECTION HERO === */
-/* === Tablet screen === */
 @media screen and (min-width: 768px) {
   .section-hero {
     padding-top: 112px;
@@ -1053,14 +1047,41 @@ p {
       url("../images/retina/dark-bg@2x-tablet.jpg");
   }
 }
-/* === Tablet screen-title === */
-@media screen and (min-width: 768px) {
-  .section-hero-title {
-    max-width: 496px;
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
-  }
+
+.section-hero-title {
+  max-width: 496px;
+  font-size: 56px;
+  line-height: 1.07;
+  margin-bottom: 36px;
+}
+/* === SECTION 1 === */
+.section-one-list-menu {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+}
+
+.section-one-list-item {
+  width: calc((100% - 24px) / 2);
+}
+/* === SECTION 2 Our Team === */
+.section-two-list-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 64px;
+}
+/* === SECTION 3 Our Portfolio === */
+
+.section-three-list-menu {
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
+}
+
+.our-benefits-item {
+  width: calc((100% - 24px) / 2);
 }
 
 /* === Desktop screen === */
