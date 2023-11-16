@@ -449,6 +449,12 @@ p {
   background: #2e2f42;
 }
 
+.container-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
 .footer-logo-link {
   display: flex;
   font-family: "Raleway", sans-serif;
@@ -474,14 +480,9 @@ p {
 }
 
 .footer-desc {
-  display: flex;
-  justify-content: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 72px;
   max-width: 288px;
   color: #f4f4fd;
 }
@@ -503,9 +504,6 @@ p {
   display: flex;
   justify-content: center;
   gap: 16px;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 72px;
 }
 
 .social-networks-item .social-networks-link:hover,
@@ -541,6 +539,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
 }
 
 .footer-label {
@@ -551,7 +550,6 @@ p {
 .footer-input {
   width: 264px;
   height: 40px;
-  margin-bottom: 16px;
   border-radius: 4px;
   border: 1px solid #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -961,6 +959,34 @@ p {
 }
 /* === /MOBILE MENU BURGER/ === */
 /* ========== /MOBILE SCREEN/ ========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========== TABLET SCREEN ========== */
 @media screen and (min-width: 768px) {
   .container {
@@ -1053,11 +1079,20 @@ p {
     line-height: 1.07;
     margin-bottom: 36px;
   }
+
+  .small-for {
+    text-transform: lowercase;
+  }
+
   /* === SECTION 1 === */
   .section-one-list-menu {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
+  }
+
+  .section-one-list-heading {
+    text-align: start;
   }
 
   .section-one-list-item {
@@ -1072,6 +1107,15 @@ p {
     column-gap: 24px;
     row-gap: 64px;
   }
+
+  /* .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
+  } */
+
   /* === SECTION 3 Our Portfolio === */
   .section-three-list-menu {
     width: 768px;
@@ -1092,14 +1136,15 @@ p {
 
   .container-holder {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 72px 24px;
+    padding-left: 108px;
   }
 
   .footer-logo {
     display: flex;
     flex-direction: column;
-    margin-left: 108px;
-    margin-right: 24px;
   }
 
   .footer-logo-link {
@@ -1122,19 +1167,18 @@ p {
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    width: 100%;
-    height: 100%;
     list-style-type: none;
-  }
-
-  .footer-subscribe {
-    display: flex;
-    flex-direction: column;
-    margin-left: 108px;
   }
 
   .footer-subscribe-title {
     justify-content: normal;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
   }
 
   .modal {
@@ -1152,9 +1196,10 @@ p {
     padding-left: 8px;
   }
 }
+/* ========== /TABLET SCREEN/ ========== */
+/* ========== DESCTOP SCREEN ========== */
 
-/* === Desktop screen === */
-/* @media screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .section-hero {
     max-width: 1440px;
     padding-top: 188px;
@@ -1165,20 +1210,19 @@ p {
       ),
       url("../images/people-office-desktop.jpg");
   }
-}
 
-@media screen and (min-resolution: 192dpi) and (min-width: 1158px),
-  screen and (min-resolution: 2dppx) and (min-width: 1158px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
-  .section-hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/retina/people-office@2x-desktop.jpg");
+  @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+    screen and (min-resolution: 2dppx) and (min-width: 1158px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .section-hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/retina/people-office@2x-desktop.jpg");
+    }
   }
-} */
-
+}
 /* === Desktop screen-title === */
 /* @media screen and (min-width: 1158px) {
   .section-hero-title {
